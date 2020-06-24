@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="Über Florenz, die Hauptstadt der Toskana, eine der beliebtesten Reiseziele in Italien">
+        <meta name="robots" content="index,follow">
+        <meta name="author" content="Stefan Groneberg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Startseite</title>
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/function.js"></script>
+    </head>
+    <body>
+        <header id="headerID" class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn" onclick="dropdownFunction()">Navigation</button>
+                <div class="dropdown-content" id="myDropdown">
+                    <ul>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="html/geschichte.html">Geschichte</a></li>
+                        <li><a href="html/attractions.html">Sehenswürdigkeiten</a></li>
+                    </ul>
+                </div>
+            </div> 
+            <script>
+                /* Wenn der Benutzer auf den Button klickt,
+                 wird gewechselt zuwischen verstecken und zeigen des Inhaltes */
+                function dropdownFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+
+                // Schießt das Dropdown-Menu, wenn der Benutzer auserhalb des Menus klickt
+                window.onclick = function (e) {
+                    if (!e.target.matches('.dropbtn')) {
+                        var myDropdown = document.getElementById("myDropdown");
+                        if (myDropdown.classList.contains('show')) {
+                            myDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            </script>
+            <h1>Florenz</h1>
+        </header>
+        <main id="mainID">
+            <img id="panoramaIMG" src="img/florence-795076_1920.jpg" alt="Panorama von Florenz" title="Panorama von Florenz">
+            <div class="inlineWrapper">
+                <div class="inlineCenter">
+                    <img id="florenzIMG1" class="imgSymbol" src="img/florence-149856_640.png" alt="">
+                    <div class="divCenterP">
+                        <p class="centerP">
+                            Eine Stadt, die den Zauber und den Glanz der Vergangenheit aufrecht erhalten hat. So stellt sich die Hauptstadt der Toskana vor: eine wunderschöne Stadt, die ihre Besucher immer wieder verzaubert und deren künstlerische Meisterwerke, die Kirchen aus buntem Marmor sowie weitere beeindruckende Bauten den Prunk und die Rolle der Stadt für die kulturelle und künstlerische Entwicklung der Renaissance repräsentieren und wieder beleben.
+                        </p>
+                    </div>
+                    <img id="florenzIMG2" class="imgSymbol" src="img/florence-149856_640.png" alt="">
+                </div>
+            </div>
+        </main>
+        <footer id="footerID" class="positionAbsolut">
+            <div class="navWrapper">
+                <nav class="footerNav">
+                    <ul>
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="html/geschichte.html">Geschichte</a></li>
+                        <li><a href="html/attractions.html">Sehenswürdigkeiten</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+        <script>
+            setFooterPosition();
+        </script>
+    </body>
+</html>

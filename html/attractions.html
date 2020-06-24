@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="Informationen zu Sehenswürdigkeiten der Stadt Florenz">
+        <meta name="robots" content="index,follow">
+        <meta name="author" content="Stefan Groneberg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sehenswürdigkeiten</title>
+        <link rel="stylesheet" href="../css/stylesheet.css">
+        <script src="../js/jquery-3.3.1.min.js"></script>
+        <script src="../js/function.js"></script>
+    </head>
+    <body>
+        <header id="headerID" class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn" onclick="dropdownFunction()">Navigation</button>
+                <nav class="dropdown-content" id="myDropdown">
+                    <ul>
+                        <li><a href="../index.html">Startseite</a></li>
+                        <li><a href="geschichte.html">Geschichte</a></li>
+                        <li><a href="attractions.html">Sehenswürdigkeiten</a></li>
+                    </ul>
+                </nav>
+            </div> 
+            <script>
+                /* Wenn der Benutzer auf den Button klickt,
+                 wird gewechselt zuwischen verstecken und zeigen des Inhaltes */
+                function dropdownFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+
+                function dropdownFunction2() {
+                    document.getElementById("ankerPortID").classList.toggle("show");
+                }
+
+                // Schießt das Dropdown-Menu, wenn der Benutzer auserhalb des Menus klickt
+                window.onclick = function (e) {
+                    if (!e.target.matches('.dropbtn')) {
+                        var myDropdown = document.getElementById("myDropdown");
+                        if (myDropdown.classList.contains('show')) {
+                            myDropdown.classList.remove('show');
+                        }
+                    }
+                }
+
+                window.onclick = function (e) {
+                    if (!e.target.matches('.dropbtn2')) {
+                        var ankerPortID = document.getElementById("ankerPortID");
+                        if (ankerPortID.classList.contains('show')) {
+                            ankerPortID.classList.remove('show');
+                        }
+                    }
+                }
+            </script>
+            <h1>Sehenswürdigkeiten</h1>
+        </header>
+        <main id="mainID">
+            <div id="navbarID" class="navbar2">
+                <div class="dropdown2">
+                    <button class="dropbtn2" onclick="dropdownFunction2(), event.stopPropagation()"><img id="menuID" src="../img/iconfinder_menu-alt_134216.svg" alt=""></button>
+                    <nav class="dropdown-content2" id="ankerPortID">
+                        <ul>
+                            <li><a href="#artikel1">Kathedrale Santa Maria del Fiore</a></li>
+                            <li><a href="#artikel2">Die Galerie der Uffizien</a></li>
+                            <li><a href="#artikel3">Ponte Vecchio</a></li>
+                        </ul>
+                    </nav>
+                </div> 
+            </div> 
+            <script>
+                $(document).scroll(function () {
+                    var y = $(this).scrollTop();
+                    if (y > 80) {
+                        $('#navbarID').fadeIn();
+                    } else {
+                        $('#navbarID').fadeOut();
+                    }
+                });
+            </script>
+            <div class="contentWrapperLeft">
+                <section id="artikel1">
+                    <h2 class="attractionsH2Left">Kathedrale Santa Maria del Fiore</h2>
+                    <p class="attractionsP">
+                        Mit seiner typischen Architektur der italienischen Gotik geht der Dom von Florenz, welcher der „S. Maria del Fiore" (Hl. Maria der Blume) geweiht ist, auf einen anfänglichen Entwurf von Arnolfo di Cambio (ca. 1245 - 1302) zurück, der das bereits bestehende Kirchengebäude durch eine beträchtliche Ausdehnung der Strukturen umbaute. Als der Bau um 1367 abgeschlossen war, wurde der Dom nach dem Muster des noch älteren Baptisteriums mit buntem Marmor verkleidet, mit Ausnahme der Fassade, die unvollendet blieb und ihr heutiges Aussehen erst im 19. Jh. erhielt.
+                    </p>
+                    <img class="attractionsIMG floatRight" src="../img/photo-67916_642.jpg" alt="Kathedrale Santa Maria del Fiore" title="Altes Bild Kathedrale Santa Maria del Fiore">
+                    <p class="attractionsP">
+                        Der Bau der Kuppel stand noch aus, von der im Jahre 1421 lediglich die Trommel (die polygonale Basis) fertiggestellt war. Aus dem hierzu unter den Architekten ausgeschriebenen Wettbewerb gingen Lorenzo Ghiberti (1368 - 1445) und Filippo Brunelleschi (1377 - 1446) als Sieger hervor, doch der endgültige Entwurf ist letzterem zu verdanken, wie auch die außerordentliche Technik, mit der die riesige Struktur angehoben wurde und 1436 zur Fertigstellung führte.
+                    </p>
+                    <p class="attractionsP">
+                        Außenseitig sei neben dem besonders gegliederten Bereich der Apsiden, vor allem auch auf das schöne Nordtor „della Mandorla“ (der Mandel) hingewiesen, das diesen Beinamen aufgrund des großen Heiligenschreins erhielt, der die Figur der heiligen Jungfrau umgibt, zu deren Gestaltung auch der Bildhauer Nanni di Banco (1380/90 - 1421) mitwirkte.
+                    </p>
+                    <p class="attractionsP">
+                        Im Innenraum sind einige hoch bedeutende Kunstwerke zu sehen, allen voran, auf der linken Wand, die beiden abgelösten Fresken, auf denen die Reitermonumente der Feldherren Giovanni Acuto und Niccolò da Tolentino	<img class="attractionsIMG floatLeft" src="../img/firenze-1905339_640.jpg" alt="Kathedrale Santa Maria del Fiore" title="Foto Kathedrale Santa Maria del Fiore"> 
+                        dargestellt sind, die von Paolo Uccello im Jahre 1436 bzw. von Andrea del Castagno im Jahre 1456 geschaffen wurden. Ebenfalls Paolo Uccello zu verdanken ist der Freskenschmuck der Uhr auf der Innenseite der Fassade, mit 4 kräftigen „teste di Santi“ (Heiligenköpfen).
+                    </p>
+                    <p class="attractionsP">
+                        Von den Skulpturen, die für den Dom angefertigt wurden (und von denen viele aus Gründen der Erhaltung in das Museum der Werke des Doms verlegt wurden) sind noch die „Lunette“ (Lünetten) von Luca della Robbia über den Sakristeientoren der Messen zu sehen. Entfernt wurde hingegen die großartige „Pietà“ von Michelangelo (ca. 1553), die im Museum der Werke des Doms aufbewahrt wird.
+                    </p>
+                    <p class="attractionsP">
+                        Beachtung verdienen auch die herrlichen Kirchenfenster, die größtenteils zwischen 1434 und 1455 nach Entwürfen bedeutender Künstler wie Donatello, Andrea del Castagno und Paolo Uccello gefertigt wurden; ferner die Intarsien (Einlegearbeiten) an den Schränken der Sakristei, deren Entwurf von Brunelleschi selbst sowie von anderen Künstlern wie Antonio del Pollaiolo stammt.
+                    </p>
+                    <p class="attractionsP">
+                        Die Innenwand der Kuppel erhielt ihren Freskenschmuck zwischen 1572 und 1579 von Giorgio Vasari (1511-1574) und von Federico Zuccari (ca. 11310-1609) mit einem großen „Giudizio Universale“ (Jüngsten Gericht).
+                    </p>
+                    <p class="attractionsP">
+                        Mindestens ebenso charakteristisch für das Stadtbild von Florenz wie die „Cupolone“ (riesige Kuppel) von Brunelleschi ist der Glockenturm, der weltweit als „Campanile di Giotto“ bekannt ist. Von dem großen Maler und Architekten Giotto stammte nämlich der Entwurf, auch wenn bei seinem Tode (1337) erst der unterste Anschnitt abgeschlossen war. Die Arbeiten wurden unter der Leitung von Andrea Pisano (ca. 1290 - ca. 1349) fortgeführt sowie unter Francesco Talenti (urkundlich nachweisbar 1325 - 1369), der das Werk schließlich zu Ende führte.
+                    </p>
+                </section>
+                <iframe id="videoKathedrale" src="https://www.youtube.com/embed/s3MaQZ2Oacc"></iframe>
+            </div>
+            <div class="contentWrapperRight">
+                <section id="artikel2">
+                    <h2 class="attractionsH2Right">Die Galerie der Uffizien</h2>
+                    <img class="attractionsIMG floatRight" src="../img/gallery-1803525_640.jpg" alt="Die Galerie der Uffizien" title="Foto der Galerie der Uffizien">
+                    <p class="attractionsP">
+                        Die Uffizien (erbaut von 1560-1580), ursprünglich erbaut zur Unterbringung der Ämter von Magistraten, Richtern und Händlern, wurden auf Wunsch der herrschenden Medici-Familie in eine private Gemäldesammlung umgewandelt. Neben den Gemälden, Statuen, Schmuck und wissenschaftlichen Geräten, wurden auch Waffen ausgestellt, was aus der Galerie eine der interessantesten Kunstsammlungen der Welt machte. 1865 wurde aus den Uffizien ein Museum, das heute über 50 Säle verteilt Gemälde aus allen Epochen vom 13. bis 18. Jahrhundert beherbergt.
+                    </p>
+                    <p class="attractionsP">
+                        Zu den bekanntesten Werken, die sich in den Uffizien befinden, zählen die berühmte „thronende Madonna“ von Giotto, die „Schlacht von San Romano“ von Paolo Uccello, das Diptychon „Federico da Montefeltro“ von Piero della Francesca, „Die Geburt der Venus“ von Botticelli. Darüber hinaus beherbergt das Museum drei Werke von Leonardo da Vinci, eines von Michelangelo, einige aus Raffaels Hand sowie mehrere von Tizian und Caravaggio. Alle Werke sind chronologisch ausgestellt, so dass man die Entwicklungen in der Kunst Schritt für Schritt nachverfolgen kann.
+                    </p>
+                </section>
+                <iframe id="videoUffizien" src="https://www.youtube.com/embed/61uXUxmpKWg"></iframe>
+            </div>
+            <div class="contentWrapperLeft clear">
+                <section id="artikel3">
+                    <h2 class="attractionsH2Left">Ponte Vecchio</h2>
+                    <p class="attractionsP">
+                        Die Ponte Vecchio (übersetzt: Alte Brücke) ist, neben der Rialtobrücke in Venedig, die wohl berühmteste Brücke in Italien und nach einigen Quellen die bekannteste Brücke der Welt. Das Bauwerk ist ein Wahrzeichen von Florenz.
+                    </p>
+                    <p class="attractionsP">
+                        Die Brücke Ponte Vecchio verbindet die Innenstadt von Florenz mit den Stadtteilen auf der anderen Seite des Flusses Arno. Auf der Brücke hat man wegen der Läden links und rechts das Gefühl in eine normalen Straße zu sein. Nur in der Mitte der Brücke ist die Ladenzeile für einige Meter unterbrochen. Von hier hat man einen wunderschönen Ausblick auf den Arno mit einigen anderen alten Brücken. Ein idealer Platz zum fotografieren. Eine Statue zeigt den wichtigsten Goldschmied in der Geschichte der Ponte Vecchio Florenz Benuto Cellini.
+                    </p>
+                    <img class="attractionsIMG floatLeft" src="../img/italy-2612745_1280.jpg" alt="Ponte Vecchio" title="Foto Ponte Vecchio"> 
+                    <p class="attractionsP">
+                        Auf den wenigen Metern auf der Ponte Vecchio mit freiem Blick herrscht stets großes Gedränge. Hunderte Touristen, viele davon aus Asien, wollen Fotos und Selfies machen. In China, Japan und Süd-Korea scheint die alte Brücke in Florenz noch berühmter zu sein als in Europa.
+                    </p>
+                    <p class="attractionsP">
+                        Es gibt auf der berühmtesten Brücke der Erde Ponte Vecchio etwa 20 Geschäfte. Fast alle sind Juweliere. Besonders hochwertiger Schmuck aus Gold und Silber wird angeboten. Die Preise vieler Schmuckstücke in den Schaufenstern sind 4-stellig, manche sind sogar noch teurer. Einige Läden verkaufen auch Armbanduhren, besonders erstklassige Marken mit hohen Preisen wie Uhren aus der Schweiz wie Rolex.	
+                    </p>
+                    <p class="attractionsP">
+                        Die Ponte Vecchio in Florenz ist eine der ältesten Brücken der Welt, die in der Segmentbogen-Technik erbaut wurden. Vermutlich im Jahr 1333 wurde eine andere Brücke aus Holz an dieser Stelle durch ein Hochwasser zerstört. Danach wurde die heutige Steinbrücke gebaut. Die Eröffnung der Ponte Vecchio war im Jahr 1345. Schon damals gab es die kleinen Läden auf dem Bauwerk über den Fluss Arno. Am Anfang waren in den meisten Geschäften Metzgereien. Dem Herzog Medici Cosimo I vertrieb die Schlachter im Jahr 1558, die ihren stinkenden Abfall in den Arno warfen, aus den Brückenläden. Danach zogen Goldschmiede und Silberschmiede in die Geschäfte auf der berühmtesten Brücke der Welt ein. Bis heute hat sich das nicht verändert.
+                    </p>
+                </section>
+                <iframe id="videoPonte" src="https://www.youtube.com/embed/9Hdu3vhufpw"></iframe>
+            </div>
+        </main>
+        <footer id="footerID" class="positionAbsolut">
+            <div class="navWrapper">
+                <nav class="footerNav2">
+                    <ul>
+                        <li><a href="../index.html">Startseite</a></li>
+                        <li><a href="geschichte.html">Geschichte</a></li>
+                        <li><a href="attractions.html">Sehenswürdigkeiten</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+        <script>
+            setFooterPosition();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,1167 @@
+@import url('https://fonts.googleapis.com/css?family=Almendra|Crimson+Text');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Site CSS */
+.clear {
+    clear: both;
+}
+
+.floatLeft {
+    float: left;
+    margin: 18px 18px 18px 0;
+}
+
+.floatRight {
+    float: right;
+    margin: 5px 0 5px 18px;
+}
+
+.positionAbsolut {
+    position: absolute;
+}
+
+.displayNone {
+    display: none;
+}
+
+html {
+    height:100%; 
+}
+
+body {
+    font-family: Times New Roman;
+    font-size: 16px;
+    padding:0;
+    margin:0;
+}
+
+/* header	--------------------------------------------- */
+
+header {
+    background-color: #0D8528;
+    height: 80px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Almendra', serif;
+    font-size: 50px;
+    color: #B9AC25;
+    padding: 10px 0;
+    width: 60%;
+    margin: 10px 20%;
+    font-weight: bold;
+}
+
+/* Dropdown Menu */
+
+.navbar {
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #B9AC25;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    height: 80px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: #057135;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.navbar2 {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 10%;
+    padding: 0;
+    /*! background-color: #B2150E; */
+    float: left;
+    z-index: 1;
+}
+
+.navbar2 a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown2 {
+    /*! float: left; */
+    /*! overflow: hidden; */
+}
+
+.dropdown2 .dropbtn2 {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar2 a:hover, .dropdown2:hover .dropbtn2, .dropbtn2:focus {
+}
+
+.dropdown-content2 {
+    display: none;
+    position: static;
+    background-color: #B2150E;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content2 a {
+    float: none;
+    color: #B9AC25;
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 12px;
+}
+
+.dropdown-content2 a:hover {
+    background-color: #0D8528;
+}
+
+.show {
+    display: block;
+}
+
+/* main		--------------------------------------------- */
+
+h2 {
+    font-family: 'Crimson Text', serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+dt {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+textarea {
+    resize: none;
+}
+
+table, th, td {
+    border: 2px solid #0D8528;
+}
+
+table {
+    margin-top: 15px;
+    display: inline-block
+}
+
+caption {
+
+    font-size: 25px;
+    padding: 7px;
+}
+
+table a {
+    color: black;
+}
+
+.thLeft, .tdRight, .tdColspan {
+    height: 22px;
+    padding: 5px
+}
+
+.tdColspan {
+    padding: 10px;
+}
+
+.thLeft{
+    text-align: left;
+    font-weight: bold;
+}
+
+tr .tdColspan {
+    border: none;
+    text-align: center;
+}
+
+.tdRight {
+    text-align: right;
+}
+
+.formBereich {
+    margin: 10px auto;
+    width: 25%;
+}
+
+.formBereich2 {
+    margin: 10px auto;
+    width: 10%;
+}
+
+.formBereich2{
+    display: block;
+}
+
+.kontaktBereich {
+    margin: 25px auto 0 auto;
+    width: 10%;
+}
+
+.formBereich h2, .kontaktBereich h2, .formBereich2 h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#loginButtonID, #regiButtonID {
+    height: 50px;
+    width: 225px;
+    font-size: 24px;
+}
+
+#buttonWrapper {
+    width: 500px;
+    margin: 60px auto 0 auto;
+}
+
+#sectionID h2 {
+    display: none;
+}
+
+#buttonWrapper p {
+
+    display: inline;
+    font-size: 65px;
+    margin: 0 10px;
+    font-family: 'Almendra', serif;
+}
+
+.kontaktLabel, .regiLabel, .regiInput {
+    display: block;
+}
+
+.submitButton, .pwVergessenbutton, .regiButton {
+    margin: 5px 0;
+}
+
+.regiBereich {
+    width: 80%;
+    margin: 10px auto;
+}
+
+#panoramaIMG {
+    width: 100%;
+}
+
+.ankerPort {
+    position: sticky;
+    top: 0;
+    width: 6.5%;
+    padding: 15px 25px;
+    background-color: #B2150E;
+}
+
+.ankerPort ul {
+    list-style: disclosure-closed;
+}
+
+.ankerPort ul li {
+    padding: 3px 0;
+    font-size: 20px;
+}
+
+.ankerPort ul li:hover {
+    color:  #0D8528;
+}
+
+.ankerPort a {
+    font-size: 12px;
+    color: #E0E0E0;
+}
+
+.contentWrapperLeft {
+    width: 68%;
+    margin: 0 0 25px 12%;
+}
+
+.contentWrapperRight {
+    width: 75%;
+    margin: 2% 10% 40px 18%;
+}
+
+.attractionsP {
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+#videoKathedrale, #videoPonte {
+    width: 480px;
+    height: 270px;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+#videoUffizien {
+    width: 480px;
+    height: 270px;
+}
+
+#florenzMap {
+    height: 450px;
+    width: 600px;
+    margin: 0 15px;
+}
+
+.geschichteH2, .attractionsH2Left {
+    padding: 10px 0;
+}
+
+.geschichteP {
+    margin: 10px 0;
+}
+
+.attractionsH2Left {
+    position: relative;
+    left: 25%;
+}
+
+.attractionsH2Right {
+    text-align: right;
+    position: relative;
+    right: 25%;
+    margin: 10px 0;
+}
+
+.inlineWrapper {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.inlineCenter {
+    margin: 0;
+    text-align: center;
+}
+
+.divCenterP {
+    width: 60%;
+    display: inline-block;
+}
+
+.imgSymbol {
+    display: inline-block;
+    width: 10%;
+    margin: 0;
+}
+
+#florenzIMG1 {
+    float: left;
+    margin: 10px 0 0 10px;
+}
+
+#florenzIMG2 {
+    float: right;
+    margin: 10px 10px 0 0;
+}
+
+.centerP {
+    text-align: center;
+    display: inline-block;
+    margin-top: 95px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-family: 'Crimson Text', serif;
+    color: #540A07;	
+}
+
+/* footer		--------------------------------------------- */
+footer {
+    background-color: #B2150E;
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    clear: both;
+}
+
+.footerLongPage {
+    position: relative;
+}
+
+.navWrapper {
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+    padding: 10px;
+}
+
+.navWrapper2 {
+    width: 40%;
+    margin: 10px auto;
+    top: 10px;
+    left: 8.5px;
+}
+
+.footerNav2 {
+    margin: 0 auto;
+    position: relative;
+    left: 8.5px;
+}
+
+.footerNav ul, .footerNav2 ul {
+    text-align: center;
+}
+
+.navWrapper nav ul li {
+    padding: 5px;
+    display: inline-block;
+}
+
+.navWrapperAddition {
+    margin: 33px 32.5%;
+}
+
+footer a {
+    color: #E0E0E0;
+    padding: 31px 5px;
+    text-decoration: none;
+}
+
+.footerLongPage p a {
+    color: #E0E0E0;
+    padding: 10px;
+}
+
+.footerLongPage p a:visited{
+    color: #B9AC25;
+}
+
+footer a:visited {
+    color: #B9AC25;
+}
+
+footer a:hover, footer a:focus {
+    color: #0D8528;
+}
+
+/*google sing-in Button*/
+#customBtn {
+    background: white;
+    color: #444;
+    width: 150px;
+    border-radius: 5px;
+    border: thin solid #888;
+    box-shadow: 1px 1px 1px grey;
+    white-space: nowrap;
+    margin-top: 5px;
+}
+#customBtn:hover {
+    cursor: pointer;
+}
+span.label {
+    font-family: serif;
+    font-weight: normal;
+}
+span.icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 42px;
+    height: 42px;
+}
+span.buttonText {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.abcRioButtonSvg {
+    margin: 10px;
+}
+
+/** CSS für alle **/
+@media only screen and (max-width: 599px) {
+
+    /* header */
+    h1 {
+        font-size: 20px;
+        width: 80%;
+        height: 60px;
+        margin: 30px auto 0 auto;
+        padding: 0;
+    }
+
+    .clear {
+        clear:  none;
+    }
+
+    img {
+        display: block;
+        width: 98vw;
+        margin: 0 auto;
+    }
+
+    .floatLeft,.floatRight {
+        float: none;
+        margin: 5px 0;
+    }
+
+    /* main */
+
+    .divCenterP {
+        width: 68%;
+        display: inline-block;
+    }
+
+    .centerP {
+        text-align: center;
+        display: inline-block;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+        font-size: 16px;
+        font-family: 'Crimson Text', serif;
+        color: #540A07;
+    }	
+
+    .contentWrapperLeft,.contentWrapperRight {
+        width: auto;
+        margin: 5px;
+    }
+
+    .attractionsP, .geschichteP {
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 15px;
+        line-height: 20px;
+    }
+
+    .attractionsH2Left, .attractionsH2Right, h2 {
+        position:static;
+        font-size: 20px;
+        margin: 10px auto 20px auto;
+    }
+
+    .geschichteH2, .attractionsH2Left, .attractionsH2Right {
+        text-align: center;
+    }
+
+    #menuID {
+        height: 40px;
+        width: 32px;
+    }
+
+    .navbar2 {
+        overflow: hidden;
+        position: sticky;
+        top: 0;
+        width: 50%;
+        padding: 0;
+        float: left;
+        z-index: 1;
+    }
+
+    .dropdown-content2 a {
+        float: none;
+        color: #B9AC25;
+        padding: 5px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        font-size: 12px;
+    }
+
+    #videoKathedrale, #videoPonte, #videoUffizien {
+        width: 96vw;
+        height: 54vw;
+        padding-bottom: 6px;
+    }
+
+    #florenzMap {
+        height: 96vw;
+        width: 96vw;
+        margin: 0 auto;
+    }
+
+    table, th, td {
+        border: 2px solid #0D8528;
+    }
+
+    table {
+        margin-top: 15px;
+        display: inline-block
+    }
+
+    caption {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    table a {
+        text-decoration: none;
+    }
+
+    .thLeft, .tdRight, .tdColspan {
+        height: 22px;
+        padding: 5px
+    }
+
+    .thLeft{
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    tr .tdColspan {
+        text-align: left;
+    }
+
+    .tdRight {
+        text-align: center;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    #loginButtonID, #regiButtonID {
+        height: 7vh;
+        width: 40vw;
+        font-size: 16px;
+    }
+
+    #buttonWrapper {
+        width: 96vw;
+        margin: 60px auto 0 auto;
+    }
+
+    .formBereich h2, .kontaktBereich h2, .formBereich2 h2 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .formBereich2, .formBereich {
+        width: 96vw;
+    }
+
+    .formBereich2 form>* {
+        display: block;
+    }
+
+    .kontaktBereich {
+        margin: 20px auto 5px auto;
+        width: 60%;
+    }
+
+
+    /* footer */
+
+    footer {
+        height: 100px;
+    }
+
+    .navWrapper nav ul li {
+        padding: 2px;
+        display: block;
+    }
+
+    .footerNav2 {
+        margin: 0 auto;
+        position: relative;
+        left: 0;
+    }
+
+    footer a {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 600px ) and (max-width: 979px )
+{
+
+
+    /* header */
+    h1 {
+        font-size: 28px;
+        width: 80%;
+        height: 60px;
+        margin: 30px auto 0 auto;
+        padding: 0;
+    }
+
+    .clear {
+        clear:  none;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .floatLeft,.floatRight {
+        float: none;
+        margin: 5px 0;
+    }
+
+    /* main */
+
+    .divCenterP {
+        width: 70%;
+        display: inline-block;
+    }
+
+    .centerP {
+        margin-top: 90px;
+        margin-bottom: 0;
+        font-size: 20px;
+        font-family: 'Crimson Text', serif;
+    }	
+
+    .inlineWrapper {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    #florenzIMG2 {
+        width: 100px;
+    }
+
+    #florenzIMG1 {
+        float: left;
+        margin: 10px 0 0 10px;
+        width: 100px;
+    }
+
+    .contentWrapperLeft,.contentWrapperRight {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #artikel3 img {
+        width: 80vw;
+    }
+
+    .attractionsP, .geschichteP {
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 15px;
+        line-height: 20px;
+    }
+
+    .attractionsH2Left, .attractionsH2Right, h2 {
+        position:static;
+        font-size: 20px;
+        margin: 10px auto 20px auto;
+    }
+
+    .geschichteH2, .attractionsH2Left, .attractionsH2Right {
+        text-align: center;
+    }
+
+    #menuID {
+        height: 40px;
+        width: 32px;
+    }
+
+    .navbar2 {
+        width: 30%;
+    }
+
+    .dropdown-content2 a {
+        float: none;
+        color: #B9AC25;
+        padding: 8px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        font-size: 12px;
+    }
+
+    #videoKathedrale, #videoPonte, #videoUffizien {
+        width: 64vw;
+        height: 36vw;
+        padding-bottom: 6px;
+    }
+
+    #florenzMap {
+        height: 60vw;
+        width: 60vw;
+        margin: 0px 12%;
+        margin-bottom: 15px;
+    }
+
+    table, th, td {
+        border: 2px solid #0D8528;
+    }
+
+    table {
+        margin: 15px 3%;
+    }
+
+    caption {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    table a {
+        text-decoration: none;
+    }
+
+
+    .thLeft{
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .tdRight {
+        text-align: center;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    #loginButtonID, #regiButtonID {
+        height: 7vh;
+        width: 40vw;
+        font-size: 16px;
+    }
+
+    #buttonWrapper {
+        width: 87vw;
+        margin: 0 auto;
+    }
+
+    #sectionID {
+        margin-top: 40px;
+    }
+
+    .formBereich2, .formBereich {
+        width: 96vw;
+    }
+
+    .formBereich2 form>* {
+        display: block;
+    }
+
+    .kontaktBereich {
+        margin: 20px auto 5px auto;
+        width: 60%;
+    }
+
+    /* footer */
+
+    footer {
+        height: 100px;
+    }
+
+    .navWrapper nav ul li {
+        padding: 2px;
+        display: block;
+    }
+
+    .footerNav2 {
+        margin: 0 auto;
+        position: relative;
+        left: 0;
+    }
+
+    footer a {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 980px ) and (max-width: 1259px )
+{
+    /* header */
+    h1 {
+        font-size: 38px;
+        width: 80%;
+        height: 60px;
+        margin: 20px auto 0 auto;
+        padding: 0;
+    }
+
+    .clear {
+        clear:  none;
+    }
+
+    /* main */
+
+    #artikel3 img {
+        width: 80vw;
+    }
+
+    #artikel2 img {
+        margin: 10px auto;
+    }
+
+    #menuID {
+        height: 40px;
+        width: 32px;
+    }
+
+    .dropdown-content2 a {
+        float: none;
+        color: #B9AC25;
+        padding: 8px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        font-size: 12px;
+    }
+
+    table, th, td {
+        border: 2px solid #0D8528;
+    }
+
+    table {
+        margin: 15px 12%;
+    }
+
+    caption {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    table a {
+        text-decoration: none;
+    }
+
+    .thLeft{
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .tdRight {
+        text-align: center;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .formBereich2, .formBereich {
+        width: 96vw;
+    }
+
+    /* footer */
+
+    footer {
+        height: 120px;
+    }
+
+    .footerNav2 {
+        margin: 0 auto;
+        position: relative;
+        left: 0;
+    }
+
+    .navWrapper nav ul li {
+        padding: 5px;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1260px ) 
+{
+    /* header */
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        padding: 10px 0;
+        width: 60%;
+        margin: 10px 20%;
+        font-weight: bold;
+    }
+
+    .clear {
+        clear:  none;
+    }
+
+    /* main */
+
+    .centerP {
+        margin-top: 65px;
+        font-size: 24px;
+    }
+
+    #florenzIMG2 {
+        margin: 10px 20px 0 0;
+        width: 10%;
+    }
+
+    #florenzIMG1 {
+        float: left;
+        margin: 10px 0 0 20px;
+        width: 10%;
+    }
+
+    #artikel3 img {
+        width: 80vw;
+    }
+
+    #artikel2 img {
+        margin: 10px auto;
+    }
+
+    .attractionsH2Left, .attractionsH2Right, h2 {
+        font-size: 28px;
+    }
+
+    #menuID {
+        height: 40px;
+        width: 32px;
+    }
+
+    .dropdown-content2 a {
+        float: none;
+        color: #B9AC25;
+        padding: 8px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        font-size: 12px;
+    }
+
+    #florenzMap {
+        height: 450px;
+        width: 600px;
+        margin: 0 12% 15px;
+    }
+
+    table, th, td {
+        border: 2px solid #0D8528;
+    }
+
+    caption {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    table a {
+        text-decoration: none;
+    }
+
+    .thLeft{
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .tdRight {
+        text-align: center;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    /* footer */
+
+    footer {
+        height: 80px;
+    }
+
+    .navWrapper nav ul li {
+        display: inline-block;
+        padding: 5px;
+    }
+
+    .footerNav2 {
+        margin: 0 auto;
+        position: relative;
+        left: 0;
+    }
+}

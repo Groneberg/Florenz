@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="description" content="Kunstgeschichtliche Informationen zur Stadt Florenz von der Gründung bis zum 19.Jahrhundert ">
+        <meta name="robots" content="index,follow">
+        <meta name="author" content="Stefan Groneberg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Geschichte der Stadt</title>
+        <link rel="stylesheet" href="../css/stylesheet.css">
+        <script src="../js/jquery-3.3.1.min.js"></script>
+        <script src="../js/function.js"></script>
+    </head>
+    <body>
+        <header id="headerID" class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn" onclick="dropdownFunction()">Navigation</button>
+                <nav class="dropdown-content" id="myDropdown">
+                    <ul>
+                        <li><a href="../index.html">Startseite</a></li>
+                        <li><a href="geschichte.html">Geschichte</a></li>
+                        <li><a href="attractions.html">Sehenswürdigkeiten</a></li>
+                    </ul>
+                </nav>
+            </div> 
+            <script>
+                /* Wenn der Benutzer auf den Button klickt,
+                 wird gewechselt zuwischen verstecken und zeigen des Inhaltes */
+                function dropdownFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+
+                function dropdownFunction2() {
+                    document.getElementById("ankerPortID").classList.toggle("show");
+                }
+
+                // Schießt das Dropdown-Menu, wenn der Benutzer auserhalb des Menus klickt
+                window.onclick = function (e) {
+                    if (!e.target.matches('.dropbtn')) {
+                        var myDropdown = document.getElementById("myDropdown");
+                        if (myDropdown.classList.contains('show')) {
+                            myDropdown.classList.remove('show');
+                        }
+                    }
+                };
+
+                window.onclick = function (e) {
+                    if (!e.target.matches('.dropbtn2')) {
+                        var ankerPortID = document.getElementById("ankerPortID");
+                        if (ankerPortID.classList.contains('show')) {
+                            ankerPortID.classList.remove('show');
+                        }
+                    }
+                }
+            </script>
+            <h1>Geschichte der Stadt</h1>
+        </header>
+        <main id="mainID">
+            <div id="navbarID" class="navbar2">
+                <div class="dropdown2">
+                    <button class="dropbtn2" onclick="dropdownFunction2(), event.stopPropagation()"><img id="menuID" src="../img/iconfinder_menu-alt_134216.svg" alt=""></button>
+                    <nav class="dropdown-content2" id="ankerPortID">
+                        <ul>
+                            <li><a href="#artikel1">Die Gründung Von Florenz </a></li>
+                            <li><a href="#artikel2">Frühes Mittelalter </a></li>
+                            <li><a href="#artikel3">Goten, Byzantiner Und Langobarden </a></li>
+                            <li><a href="#artikel4">Das Karolingische Zeitalter </a></li>
+                            <li><a href="#artikel5">Hochmittelalter </a></li>
+                            <li><a href="#artikel6">Das Zeitalter Der Landkommunen Und Stadtrepubliken</a></li>
+                            <li><a href="#artikel7">Das 13. Jahrhundert</a></li>
+                            <li><a href="#artikel8">Guelfen Und Ghibellinen</a></li>
+                            <li><a href="#artikel9">Das 14. Jahrhundert Bis Zur Renaissance</a></li>
+                            <li><a href="#artikel10">Die Renaissance</a></li>
+                            <li><a href="#artikel11">Das 16. Jahrhundert </a></li>
+                            <li><a href="#artikel12">Die Grossen Namen Des 16. Jahrhunderts</a></li>
+                            <li><a href="#artikel13">Der Rücktritt Der Medici</a></li>
+                            <li><a href="#artikel14">Das Zeitalter Der Lothringer</a></li>
+                            <li><a href="#artikel15">Florenz Als Hauptstadt</a></li>
+                            <li><a href="#artikel16">Florenz Im 19. Jahrhundert</a></li>
+                            <li><a href="#artikel17">Florenz Heute </a></li>
+                        </ul>
+                    </nav>
+                </div> 
+            </div> 
+            <script>
+                document.getElementById("navbarID").style = "display: none;";
+                $(document).scroll(function () {
+                    var y = $(this).scrollTop();
+                    if (y > 80) {
+                        $('#navbarID').fadeIn();
+                    } else {
+                        $('#navbarID').fadeOut();
+                    }
+                });
+            </script>
+            <div class="contentWrapperLeft">
+                <section id="artikel1">
+                    <h2 class="geschichteH2">
+                        Die Gründung Von Florenz
+                    </h2>
+                    <p class="geschichteP">
+                        Die Gründung von Florenz im 1. Jahrhundert vor Christus geht auf die Römer zurück. Die Stadt entstand unter dem Namen Fiorentina, die Blühende, am Fuße eines Hügels, auf dem heute noch die ältere etruskische Stadt Fiesole liegt. Im ältesten Teil der Stadt kann man immer noch die römischen Ursprünge der einstigen Kolonie von Cesar erkennen. Im typischen Stil der römischen "Castra", durchlaufen die Stadt zwei Achsen, eine erstreckt sich vom Battistero zur via Roma und weiter auf die via Calimala, die andere hingegen reicht von der via del Corso über die via degli Speziali bis zur via degli Strozzi. Zur besseren Verteidigung wurde die Stadt am Zusammenfluss zweier Flüsse gegründet, dem Arno und dem Mugnone.
+                    </p>
+                    <p class="geschichteP">
+                        Die heutige Piazza della Repubblica war einst das Forum Urbis, wo sich später auch die Kurie und der Tempel der Trias (Jupiter, Juno, und Minerva) stand und befindet sich an dem Punkt, wo sich die beiden Achsen kreuzten. Archäologische Funde, die während den Arbeiten zur Erneuerung des Stadtkerns ans Licht kamen, machten es möglich, verschiedene wichtige Stadtbauten zu lokalisieren und zu identifizieren. So zum Beispiel die Kapitol Bäder, die Badeanstalten von Capaccio, das Abwasser-System, der Belag der Straßen und der Tempel der Isis in der Piazza San Firenze. Zu dieser Zeit befand sich der Fluss Arno mit dem Hafen außerhalb der Stadtmauern. Der Hafen war zu dieser Zeit sehr wichtig, da im römischen Zeitalter der Fluss von der Quelle bis zur Mündung in den Affricano befahrbar war. Die erste Brücke wurde wahrscheinlich etwas flussaufwärts der heutigen Ponte Vecchio im ersten Jahrhundert v. Chr. gebaut.
+                    </p>
+                    <p class="geschichteP">
+                        Dank ihrer guten Lage, entwickelte sich die Stadt schnell. Schon bald löste sie Arezzo als Regierungssitz des nördlichen Etruriens ab. Wirtschaftliche Macht war die treibende Kraft hinter dem städtischen Wachstum dieser jungen Kolonie. Kaufmännische Aktivitäten und Handel florierten dank wichtiger Handels- und Informationswegen, zu Land und zu Wasser, die durch Florentia führten.
+                    </p>
+                    <p class="geschichteP">
+                        Die frühesten Hinweise zur christlichen Religion stehen in engem Zusammenhang zu den Kulten des Diakons Lorenzo und dem palästinensischen Heiligen Felicita. Es wurden die ersten florentinischen Kirchen erbaut: San Lorenzo, die erste Diözese wurde 393 n. Chr. geweiht und Santa Felicita, dessen Ursprünge zurück auf das 4. und 5. Jahrhundert gehen. Doch vor dem späten 3. Jahrhundert n. Chr. hatte Florenz keinen Bischof. Der erste Bischof, von dem man weiß, ist San Felice, welcher 313 n. Chr. an einer christlichen Versammlung in Rom teilnahm.
+                    </p>
+                </section>
+            </div>
+            <div class="contentWrapperLeft">
+                <section id="artikel2">
+                    <h2 class="geschichteH2">
+                        Frühes Mittelalter
+                    </h2>
+                    <p class="geschichteP">
+                        Nach dem Untergang des Weströmischen Reiches geriet die gesamte Apenninhalbinsel und somit auch das antike Etrurien nacheinander unter ostgotische, byzantinische, langobardische und fränkische Herrschaft.
+                    </p>
+                </section>
+            </div>
+            <div class="contentWrapperLeft">
+                <section id="artikel3">
+                    <h2 class="geschichteH2">
+                        Goten, Byzantiner Und Langobarden
+                    </h2>
+                    <p class="geschichteP">
+                        Die Völkerwanderung (nach 375 n. Chr.) löste eine verstärkte Abwanderung der Ostgoten nach Italien aus. Die Invasion der Barbaren behinderte die Stellung von Florentia ernsthaft. Im Jahre 405 n. Chr. konnte die Stadt erst noch den Horden Radagaisus standhalten, doch später konnte sie es nicht vermeiden, in die gotisch-byzantinischen Kriege mit einbezogen zu werden. Die strategische Lage und der Stützpunkt am Arno, sowie wichtiger Punkt der Kommunikationsstrecke zwischen Rom und Padanien (Norditalien-Poebene), erklären, wieso die Stadt so stark von den Goten und den Byzantinern umkämpft war. 541-44 n. Chr. wurden neue Stadtmauern, mit der Hilfe der großen römischen Bauten, wie dem Campidoglio, dem Wasserspeicher für die Bäder und das Theater, errichtet. Die Mauer war trapezförmig und seine bescheidenen Ausmaße bezeugen den Rückgang der Stadtbevölkerung. Es waren nur noch weniger als 1000 Einwohner übrig geblieben.
+                    </p>
+                    <p class="geschichteP">
+                        Gegen Ende der Völkerwanderungszeit ließen sich die Langobarden von 570 - 774 in der Toskana nieder. In dieser Zeit fiel auch Florenz unter ihre Herrschaft. Das war wohl das dunkelste Zeitalter ihrer Geschichte. Abgeschnitten von den Hauptverkehrsstraßen, verschwand auf einmal ihre Existenzgrundlage. Für den Nord-Süd Kommunikationsfluss verließen die Langobarden ihre zentrale Route Bologna-Pistoia-Florenz, da diese zu offen dalag für die Byzantiner, die immer noch den Osten Italiens kontrollierten. Lucca wurde als Regierungssitz des toskanischen Herzogtums auserkoren, da es strategisch gut an der internen Kommunikationstraße lag.
+                    </p>
+                    <p class="geschichteP">
+                        Zu dieser Zeit, nachdem Königin Theodolinda zur römischen christlichen Kirche konvertiert war, wurden die ersten christlich-religiösen Gebäude in der Stadt gebaut, einschließlich des Baptisteriums von San Giovanni (Johannes der Täufer), wenn auch nicht in seiner heutigen Form. Die alten Fundamente kann man noch heute im "Keller" der Kirche bewundern.
+                    </p>
+                </section>
+            </div>
+            <div class="contentWrapperLeft">
+                <section id="artikel4">
+                    <h2 class="geschichteH2">
+                        Das Karolingische Zeitalter
+                    </h2>
+                    <p class="geschichteP">
+                        Ein Hilferuf des Papstes, der mit Unterstützung der Franken die Langobarden wieder aus dem Land vertreiben wollte, brachte mit Karl dem Großen die Karolinger in die Toskana. Im Gegenzug krönte der Papst Weihnachten 800 Karl den Großen zum Kaiser des Heiligen Römischen Reiches (Deutscher Nationen). Lucca war weiterhin Residenzstadt und Feudalsystem und Christentum begannen sich weiter auszubreiten. Florenz wurde zum eigenen Verwaltungsbezirk des Heiligen Römischen Reiches ernannt. Zahlreiche Tatsachen zeigen daraufhin, dass die Stadt zu Karolingerzeiten wieder zu neuem Leben kam: im 9. Jahrhundert wurde die erste geistliche Schule gegründet und die zerstörte Brücke über den Arno wurde wieder konstruiert. Um die Jahrhundertwende wurden neue Stadtmauern gebaut, wahrscheinlich aus Angst vor einer ungarischen Invasion. Diese dritte Stadtmauer folgte teilweise der alten römischen Mauer. Im Süden wurde sie zu den neu entstandenen Vororten ausgeweitet, im Norden hingegen wurden aus politischen Gründen, das Baptisterium, Santa Reparata, der Bischofspalast und der angrenzende Palatium Regis, in dem der Repräsentant des Kaisers seinen Gerichtshof hatte, nicht mit eingeschlossen.
+                    </p>
+                    <p class="geschichteP">
+                        978 stiftet Gräfin Willa, Mutter des kinderlosen Markgrafen Hugo, den ersten innerstädtischen Konvent S. Maria, zu Ehren ihres verstorbenen Mannes Markgraf Hubert von Tuszien. Florenz hat seine weitere Entwicklung der Entscheidung Hugos zu verdanken, als der Sohn von Gräfin Willa beschloss, Lucca zu verlassen und seinen Wohnsitz an den Flussufern des Arnos zu wählen. Dies verstärkte den neuen Verwaltungscharakter von Florenz.
+                    </p>
+                </section>
+            </div>
+            <div class="contentWrapperLeft">
+                <section id="artikel5">
+                    <h2 class="geschichteH2">
+                        Hochmittelalter
+                    </h2>
+                    <p class="geschichteP">
+                        Dadurch, dass Lucca nicht länger Regierungssitz der Markgrafschaft Tuszien (heutige Toskana bis hoch in Poebene) war, wurde die Lage von Florenz, in der Mitte des 11. Jahrhunderts, immer wichtiger. Zudem unterstützte die Stadt weitläufig die Kirchenreformen und spielte somit im Investiturstreit, der Kampf zwischen der päpstlichen und der weltlichen Macht um die Ernennung der Bischöfe und Äbte, eine wichtige Rolle. Repräsentative Leitfigur war der Heilige San Giovanni Gualberto, der den Orden von Vallambrosa gründete. 1055 wurde in Florenz ein wichtiger Rat von Papst Viktor II abgehalten, an dem Kaiser Heinrich III. und 120 Bischöfe teilnahmen. In der zweiten Hälfte des 11. Jahrhunderts wurden viele alte Gebäude, unter anderem das Baptisterium und San Lorenzo wieder aufgebaut. Am 6. November 1059 wurde die alte Taufkirche der Stadt - sehr beeindruckend renoviert, ähnlich der heutigen Form, von Papst Nicholas II - neu getauft. Nach dem Tod ihrer Mutter Beatrix und ihres Ehemannes Markgraf Gottfried der Bucklige, wurde Mathilde von Canossa (1046-1115) die Markgräfin der Toscana. Sie war in tiefer Frömmigkeit der Kirchenreform zugetan, die vor allem in Papst Gregor VII. ihren größten Protagonisten fand und dem sie zeitlebens verbunden blieb. Im ausbrechenden Investiturstreit nahm Mathilde zunächst zwischen König Heinrich IV. und Papst Gregor VII eine vermittelnde Position ein, was zur Absolution Heinrichs IV. auf ihrer Stammburg Canossa (Januar 1077) durch den Papst führte. Der Gang Heinrichs IV. nach Canossa ist auch heute noch ein Sprichwort für unangenehme Büßergänge. 1078 ließ sie um Florenz neue Stadtmauern bilden. Diese vierte Mauer folgte zum Großteil den Karolingischen Mauern, schloss jedoch diesmal im Norden das Baptisterium, Santa Reparata und die Residenz der Gräfin mit ein. Während dieser Zeit war die Stadt in vier Stadtteile aufgeteilt. Die Stadtteile nahmen den Namen von den vier Stadttoren: im Osten die Porta San Piero, im Westen die Porta San Pancrazio, im Süden die Porta Santa Maria und im Norden die so genannte "Porta del Vescovo (= Bischof)".
+                    </p>
+                </section>
+            </div>
+
+            <div class="contentWrapperLeft">
+                <section id="artikel6">
+                    <h2 class="geschichteH2">
+                        Das Zeitalter Der Landkommunen Und Stadtrepubliken
+                    </h2>
+                    <p class="geschichteP">
+                        Nach dem Tod der kinderlosen Markgräfin Mathilde von Canossa im Jahr 1115 wurde Florenz zur freien Kommune. In dieser Zeit entwickelten sich sowohl der Handel, als auch das Gewerbe (Wolle und Seide) und damit wurde das Bürgertum immer wohlhabender. Die Adelsgeschlechter regierten die Stadt. Durch die Führungsrolle von Florenz in dem Kampf gegen den Kaiser, war es unvermeidlich, dass 1125, nach dem Tod des letzten aus dem Geschlecht der Franken stammenden Kaisers, Heinrich V., die Florentiner sich dazu entschieden, ihre rivalisierende Nachbarstadt Fiesole anzugreifen. Die beiden Städte wurden zusammengefasst und nur in geistlicher Hinsicht blieben sie unabhängig, nämlich dadurch, dass Fiesole seine eigene Diözese behielt. Die Kommunen wurden erstmals erwähnt, als sich 1138 die toskanischen Städte zu einem Bund zusammenschlossen, aus Angst davor, dass Heinrich X. der Stolze, der sie schon als kaiserlicher Gesandter unterdrückte, zum Kaiser gewählt werden könne. In dieser Zeit gab es in der Kommune weltliche und geistliche Repräsentanten, mit drei dominanten sozialen Gruppen: die Adligen, die Kaufmänner und die berittenen Soldaten, das Rückgrat der Armee. Während des 12. Jahrhunderts waren es zwar die Adligen, die das Sagen hatten, aber die Kaufmänner waren dafür verantwortlich, dass die Stadt wuchs. Die Anzahl der Kaufmänner und Händler stieg stetig weiter in der zweiten Hälfte des Jahrhunderts, als der Handel zu fernen Ländern immer intensiver wurde und sich als neue, und viel reichere Quelle zum Ansammeln neuer Reichtümer herausstellte. Ausgedehnter Handel und dadurch erlangte Ehre, waren für das ständige wirtschaftliche und demographische Wachstum der Stadt verantwortlich. Dieser Wachstumsprozess kam nur vorübergehend zum Stillstand, als Friedrich I. Barbarossa immer weiter in den Süden Italiens vordrang. Im Jahre 1185 nimmt der Kaiser der Stadt ihr Umland weg und gibt as an die Markgrafschaft der Toskana. Doch dies hielt nicht lange. 1197, nach dem Tod von Barbarossas Nachfolger Heinrich IV., nützt Florenz die Gelegenheit, um sich das Land wieder zurückzuholen.
+                    </p>
+                    <p class="geschichteP">
+                        Der Reichtum und die Autonomie der Stadt wuchsen gleichermaßen an, sodass 1173 - 1175 ein weiterer Mauerring gebaut werden musste, der zum ersten Mal auch das Viertel Oltrarno einschloss. Die Mauer war im Gegensatz zur vorherigen ungefähr doppelt so lang und schloss circa dreimal soviel Gebiet mit ein. Durch den Einschluss des Arno wurde der Fluss zu einer wichtigen Infrastruktur, Energie- und Wasservorratsquelle. Im 12. Jahrhundert wurde die Skyline der Stadt von vielen Türmen dominiert. 1180 wurden 35 dokumentiert, aber es gab natürlich mehr. Später wurden diese Türme auch als Häuser benutzt. Doch im 12. Jahrhundert dienten sie noch ausschließlich der Verteidigung und waren verantwortlich für die Geburt der so genannten "Turm-Gesellschaften", Verbindungen einflussreicher Geschäftsleute, die so einen Teil der Stadt unter Kontrolle halten konnten. Durch das weitere Wachstum wurden zudem in dieser Zeit eine beträchtliche Anzahl kleinerer und größerer Kirchen gebaut. Innerhalb von zwei Jahrhunderten war die Anzahl der Kirchen verdreifacht. So besaß die Stadt Anfang des 13. Jahrhunderts über 48 Kirchen.
+                    </p>
+                </section>
+            </div>
+
+            <div class="contentWrapperLeft">
+                <section id="artikel7">
+                    <h2 class="geschichteH2">
+                        Das 13. Jahrhundert
+                    </h2>
+                    <p class="geschichteP">
+                        Die Geschwindigkeit, in der die neuen Mauern gebaut wurden, ist ein Zeichen dafür, dass in Florenz der Reichtum regierte. Die Stadt ist zum Hauptzentrum der kontinentalen Toskana geworden, mit 30.000 Einwohnern und wuchs immer weiter durch die vielen Zuwanderer, die vom Land kamen. Die Kommune erlebte eine Zeit des Friedens, in der die Wirtschaft immer mehr expandierte. Die Kaufmänner, die schon 1183 dem Beispiel der Ritter folgend, damit begannen sich zu Verbänden zusammenzuschließen (die Arte dei Mercanti), vermehrten sich schnell und bis jenseits der Gebietsgrenzen. Folglich wurde Florenz gegen die Jahrhundertwende ein internationales Wirtschaftszentrum. Die Entwicklung der Wirtschaft ging so rasch vorwärts, dass die Verbände sich innerhalb einiger Jahre multipliziert hatten. Manche Gebäude der Zünfte und Gilden sind auch heute noch in der Stadt erhalten. Es gibt Gebäude, die aufs 14. Jahrhundert zurückgehen, zum Beispiel das der Wollzunft, welches 1308 erbaut wurde. Die Bevölkerung wächst immer weiter und mit ihr auch die Stadtfläche. Das Wachstum hat allerdings keine natürliche Ursache, sondern liegt an der großen Zuwanderung von den Landgebieten. Die Immigranten, Mitglieder der ländlichen Mittelschicht, die sich durch die allgemeine wirtschaftliche Entwicklung gebildet hatte, ließen sich in den Stadtteilen nieder, welche mit ihrer Herkunft übereinstimmten. Dies war der Grund, warum das Viertel Oltrarno, an dem die beliebten südlichen Gebiete zusammenliefen, so enorm im Wachsen war, dass 1128 eine zweite Brücke aus Stein und Holz und 1237 eine dritte Brücke weiter stromaufwärts gebaut wurden. Diese letzte Brücke, komplett aus Stein errichtet, wurde an die breiteste Stelle des Arno gebaut und wurde bald Ponte alle Grazie genannt, nach einer kleinen Kirche, die Mitte des 14. Jahrhunderts auf einem ihrer Piers errichtet wurde. Das immer größer werdende Bedürfnis nach Handel und Kommerz zwischen den Städten führte 1252 zur Konstruktion einer weiteren Brücke, der Ponte a Santa Trinità. Diese vier Brücken erfüllten die Bedürfnisse der Stadt bis ins 19. Jahrhundert. Die neuen religiösen Orden (Franziskaner, Dominikaner, Augustiner, Karmeliter, Serviter) spielten eine wichtige Rolle in der Strukturierung der spätmittelalterlichen Stadt. Die Dominikaner, welche sich 1221 in der kleinen Kirche Santa Maria delle Vigne ansiedelten, bauten zum ersten Mal ihr Kloster 1246 aus und begannen dann 1278 mit dem jetzigen Bau. Die erste Kirche der Franziskaner, zu Ehren des heiligen Kreuzes - Santa Croce - wird dem zweiten Viertel des 13. Jahrhunderts zugeschrieben und 1295 wurde sie in der heutigen Form neu gebaut. Dasselbe passierte mit den Augustinern von Santo Spirito, welche sich 1259 im Herzen des Stadtteils Oltrarno niederließen und 1296 die Kirche vergrößerten. Nicht nur, dass die neuen Orden die alten Kirchen neu errichten ließen, sondern sie bauten auch riesige neue Konventkomplexe mit Kreuzgängen und Räumen zum studieren und arbeiten. Sie organisierten das kommunale Leben der Stadtbevölkerung, und spielten eine große Rolle in deren politischen, kulturellen und religiösen Leben. Zusammen mit der neuen Kathedrale Santa Maria del Fiore, deren Konstruktion im Jahre 1294 begann, machten die großen Kirchen, die durch Bettelmönch-Orden Ende des 13. Jahrhunderts gebaut wurden, den Hauptteil der gotischen und religiösen Baukunst in Florenz aus.
+                    </p>
+                </section>
+            </div>
+
+            <div class="contentWrapperLeft">
+                <section id="artikel8">
+                    <h2 class="geschichteH2">
+                        Guelfen Und Ghibellinen
+                    </h2>
+                    <p class="geschichteP">
+                        Zu Beginn des 13. Jahrhunderts teilte sich die Aristokratie in zwei große Parteien: die Guelfen (Welfen, Anhänger des Papstes) und die Ghibellinen (Waiblinger, Anhänger der Hohenstaufen). Da die Ghibellinen das Erstarken von freien Kommunen verhindern wollten, stand das Großbürgertum auf Seiten der Guelfen. Auch die Kaufleute standen auf dieser Seite, wenn dies auch nur aus wirtschaftlichen Gründen. Doch auch innerhalb der papsttreuen Partei führten Auseinandersetzungen zu einer Spaltung der Guelfen in zwei Fraktionen, den Weißen und den Schwarzen. 1282 brachten das wohlhabende Bürgertum und mit ihm die erstarkten Zünfte die Regierung an sich. An die Spitze der Stadt trat die "Signoria", die sich aus den Vorstehern der Zünfte, den so genannten Priori, zusammensetzte.
+                    </p>
+                    <p class="geschichteP">
+                        Trotz dieser heftigen und lang andauernden Machtkämpfe wurde Florenz immer reicher und mächtiger und hatte bald die Vorherrschaft in Mittelitalien erlangt. Bis zum Ausbruch der Pest von 1348, welche etwa zwei Drittel der Einwohner von Florenz tötete, war Florenz zu einer der meist bevölkerten Städte der Welt geworden. Diese Vormachtsstellung spiegelte sich auch in einer regen Bautätigkeit wider. Bedeutende weltliche und religiöse Bauwerke, wie der Palazzo Vecchio, S.Maria Novella, S. Croce, S. Maria del Fiore, der Campanile von Giotto und Orsanmichele, entstanden. In dieser Zeit prägten Künstler, wie Giotto, Cimabue, Arnolfo di Cambio und Andrea Pisano, das Stadtbild.
+                    </p>
+                </section>
+            </div>
+            <div class="contentWrapperLeft">
+                <section id="artikel9">
+                    <h2 class="geschichteH2">
+                        Das 14. Jahrhundert Bis Zur Renaissance
+                    </h2>
+                    <p class="geschichteP">
+                        Gegen Ende des 13. Jahrhunderts und Anfang des 14. wurde der Unterschied zwischen der unteren und mittleren Klasse sowie der oberen Klasse - den reichen Händlern - immer stärker sichtbar. Zweitere hatten einen festen Griff auf die Macht, doch in der zweiten Hälfte des 14. Jahrhunderts versuchte das Popolo minuto einige Male, die demokratische Basis zu erweitern, indem sie die Arti minori mehr an der Regierung teilnehmen ließen.
+                    </p>
+                    <p class="geschichteP">
+                        1378, unter dem Einfluss einer Bewegung des Proletariats, wurde das Popolo grasso dazu gezwungen, eine institutionelle Reform zu akzeptieren, welche die Bildung neuer Gilden mit sich brachte: Tintori, Farsettai (Färber, Korsettmacher). Sie entsprachen den einfachsten und bescheidensten Aktivitäten der Arbeiter. Doch durch diverse interne abweichende Interessen und durch die Unfähigkeit der Regierung, waren diese Gilden nicht fähig, der Reaktion der großen kaufmännischen Mittelschicht zu widerstehen, welche bald wieder die Macht übernahm.
+                    </p>
+                    <p class="geschichteP">
+                        Die Rivalität zwischen zweier Adelsfamilien führte zu großen Meinungsverschiedenheiten und bewirkte so die Bildung zweier feindlicher politischer Gruppierungen: Neri und Bianchi, die Schwarzen und Weißen. Die ersteren waren generell Verfechter der Neuankömmlinge mit einfachem Profit. Sie waren zusammen mit den Vertretern der alten Adelsklasse und den unnachgiebigsten Anhängern der Guelfen gruppiert. Die beiden Parteien veränderten zwar ihre Prioritäten im letzten Jahrzehnt des 13. Jahrhunderts, doch danach verschärfte sich der Konflikt immer mehr. Die Stadtoberhäupter waren dazu gezwungen, die Anführer beider Fraktionen ins Exil zu schicken, damit die Situation beschwichtigt wurde. Die Neri appellierten an den Papst zum Eingreifen, welcher daraufhin als Friedensstifter Charles von Valois schickte, den Bruder von Philip Le Belle, König von Frankreich. Er war offensichtlich mehr auf der Seite der Neri. Er ließ sogar die Anführer der Bianchi verhaften und zwang diejenigen, die zu schädlich waren, wie z.B. Dante Alighieri, ins Exil zu gehen.
+                    </p>
+                    <p class="geschichteP">
+                        Zu diesen internen Kämpfen kam auch noch, dass die Stadt die schwere Last des Krieges gegen die mächtigen Ghibellinen Signoria von den Visconti und den Scaligeri erleiden musste. An diesen Krieg schlossen sich auch die Pisaner und die Lucchesen an. Zwei schwerwiegende Niederlagen, eine 1315 und die andere zehn Jahre später, brachten Florenz dazu, erst nach dem Schutz der Angeviner Truppen zu bitten und sich dann freiwillig der Herrschaft von Karl, Herzog von Kalabrien - aus dem Hause Anjou - zu unterwerfen. Der Tod des Herzogs im Jahre 1327 stellte unerwartet wieder die Freiheit der Florentiner Kommune her. Doch es war hier noch nicht zu Ende. Ein erneuter Versuch, Pisa und Lucca einzunehmen versagte kläglich. Die Florentiner, die 1339 von der ghibellinischen Armee unter der Führung des Herrschers von Verona, Martino della Scala, erneut besiegt wurden, mussten so wieder einmal um Hilfe, diesmal von König Robert, bitten. Dies endete in einer kurzen Tyrannei, bis die Bevölkerung dem Gewalt- und Machtmissbrauch müde geworden war und die bürgerliche Freiheit rekonstruierte, indem sie den Tyrannen stürzten.
+                    </p>
+                    <p class="geschichteP">
+                        Während des 14. Jahrhunderts wurden die internen Zwiste und Kriege durch Hungersnöte und Epidemien verschlimmert, insbesondere der Schwarzen Pest im Jahre 1348, welche die unstabile Situation noch mehr verschlechterte. Weitere Schäden entstanden durch die zerstörende Flut 1333, welche auch alle Brücken bis auf die Rubaconte mit sich riss. Somit war das 14. Jahrhundert ein Jahrhundert politischer und wirtschaftlicher Krisen. Die Krise machte sich auch im Stadtbau bemerkbar, welcher viel langsamer voranschritt als zuvor. Zuerst wurden die großen Unternehmungen vom Ende des 13. Jahrhunderts fortgesetzt (die Mauer, die Kathedrale, der Palazzo della Signoria, der große Mönchskomplex), als auch mit dem Wiederaufbau der zerstörten Brücken begonnen. Die erste, die wieder errichtet wurde, zwischen 1334 und 1337, war die Ponte alla Carraia, offenbar nach einem Entwurf von Giotto. Der Ponte Vecchio wurde von Taddeo Gaddi mit drei weitreichenden Bögen und einer breiteren Straße als zuvor konstruiert. Nach dem beeindruckenden Wachstum im 13. Jahrhundert, nahm die Stadt langsam Formen an, und eine echte Stadt-Planungs-Politik, welche bestimmte, wie die Gebäude zu bauen seien, machte sich langsam bemerkbar. Durch das ganze 14. Jahrhundert hindurch wurde eine Vorkehrung nach der anderen getroffen, um die Straßen zu erweitern. Natürlich lag auch mit an erster Stelle, die Neuorganisierung der wichtigsten Plätze der Stadt, wie der Piazza della Signoria und die Piazza del Duomo, sowie der Straßen. Wie man noch heute gut sehen kann, haben die Gebäude aus jener Zeit eine Fassade aus grob-geschlagenen Blöcken aus Pietraphorte. Der typische florentiner Rundbogen besteht aus abgerundeten oder flachen Intrados und leicht spitzen Extrados.
+                    </p>
+                </section>
+            </div>
+            <div class="contentWrapperLeft">
+                <section id="artikel10">
+                    <h2 class="geschichteH2">
+                        Die Renaissance
+                    </h2>
+                    <p class="geschichteP">
+                        Als die Macht am Ende des 14. Jahrhunderts an das Popolo grasso zurückging, wurde in Florenz eine oligarchische Regierungsform eingeführt und eine kleine eingeschränkte Anzahl von Kaufleuten aus der mittleren Klasse herrschte die nächsten 40 Jahre über die Stadt. Es entstand jedoch auch eine wachsende Opposition zu dieser Oligarchie, welche sich die Unzufriedenheit der breiten Masse zum nutzen machte. Derjenige Teil der Mittelklasse, der von der Macht ausgeschlossen war, brachte alle Waffen zusammen und fand in Giovanni de' Medici, Kopf des reichsten und machtvollsten Unternehmen von Calimala, einen geeigneten Führer. Nach Giovannis Tod (1429) wurde der Unterschied immer deutlicher, während die positive Meinung für die Medici immer weiter wuchs. Giovannis Erstgeborener wurde Alleinherrscher der Stadt, obwohl er diese Tatsache zu verstecken versuchte, indem er die alte republikanische Institution beibehielt, ihr dafür aber jede effektive Macht nahm. Giovanni, der 1464 verstarb, wurde vom mittelmäßigen Piero der Gichtige (14641469) abgelöst. Dessen Sohn, Lorenzo der Prächtige, führte diese Versteck-Politik bis nahezu dem Ende des Jahrhunderts fort, indem er die traditionellen Ämter beibehielt. Doch war es auch nie außer Frage, was er wirklich darstellte: der wirkliche Alleinherrscher über Florenz.
+                    </p>
+                    <p class="geschichteP">
+                        Während der Jahre, in denen die kaufmännische Oligarchie Florenz beherrschte und in den frühen Jahren der Medici-Herrschaft, schuf der wachsende Kontakt zum antiken Rom und Griechenland den Ansporn zu einem neuen Geist. Die Stadt wurde zum Zentrum des Schaffens des Humanismus. Der Mensch erwägt sich selbst als das ultimative Ende, begierig nach rationalem Wissen und mit der Neigung seine Dominanz gegenüber der Natur, die ihn umgibt und der Geschichte die ihm vorausgegangen ist, zu verstärken. Literatur, Wissenschaft, Kunst und menschliche Aktivitäten kamen an erster Stelle und es war ein goldenes Zeitalter des europäischen Intellekts und Kultur. Nehmen wir als Beispiel Filippo Brunelleschi: zwischen 1420 und 1446 schaffte er eine Gruppe von Werken, welche eine der wichtigsten Momente in der Geschichte der florentinschen Architektur und Stadtplanung widerspiegeln sollte. Es ist allen voran Brunelleschi und dann als zweites den anderen Exponenten des frühen 15.Jahrhunderts zu verdanken, dass Florenz sich seit dem als die "Renaissance-Stadt" schlechthin, idealisiert von den Humanisten dieser Zeit, präsentiert. Eine unglaubliche Anzahl an künstlerischen Persönlichkeiten vollbrachte dieses Image der Renaissance-Stadt. Unter ihnen Donatello, Masaccio, Filippo Lippi, Domenico Ghirlandaio, Sandro Botticelli, Beato Angelico, Michelozzo, Giuliano da Sangallo und Benedetto da Maiano, welche nur eine geringe Auswahl darstellen.
+                    </p>
+                </section>
+            </div>
+            <div class="contentWrapperLeft">
+                <section id="artikel11">
+                    <h2 class="geschichteH2">
+                        Das 16. Jahrhundert
+                    </h2>
+                    <p class="geschichteP">
+                        Lorenzo der Prächtige wusste seine persönliche Macht durchzusetzen, ohne die republikanische Verfassung zu stürzen. Nach seinem Tod 1492 brauchte sein Nachfolger, sein Sohn Pietro der Unglückliche, allerdings nur ein paar Jahre, um die wunderbare Struktur der Medici Dynastie zu zerstören. Die feige Politik von Pietro in Bezug auf den Eindringling Charles VIII zwang die Stadt dazu, ihn zu stürzen und die Republik vollständig zurück zu bilden. Die Leute waren in zwei Gruppen geteilt: die Anhänger der Medici und die Bürger, die von Girolamo Savonarola geführt wurden. Diese zweiten wollten eine Reformierung der Regierung bewirken, durch das Einsetzen einer neuen Regierung, in welcher der "Gran Consiglio", der aus Mitgliedern der wichtigsten Familien bestand, eine große Bedeutung spielen sollte. Aber dies weilte nur von kurzer Dauer, bevor die Medici und ihre Unterstützer, dank der Tatsache, dass Savonarola als Ketzer verurteilt wurde, ein Comeback schafften. Er wurde auf Anordnung von Papst Alexander VI am 23. Mai 1498 auf der Piazza della Signoria auf dem Scheiterhaufen verbrannt. Dies war der Zeitraum, in dem Michelangelo seine berühmte Statue des David schuf, die gegenüber der Piazza della Signoria als Wächter des Friedens aufgestellt wurde. Auf Geheiß des Papstes hin befand sich die Stadt danach wieder unter der Herrschaft der Medici. Sie war alliiert mit dem König von Aragon, dessen Wort in Italien, nachdem der französische König es verlassen hatte, Gesetz war. Die Beförderung auf den päpstlichen Thron, erst von Giovanni de' Medici im Jahre 1512, dann von Giulio (Clement VII), schien die Macht der Medici wieder zu bekräftigen. Doch als 1527 die Nachricht der Plünderung Roms nach Florenz durchdringt, rebellierte die Bevölkerung und die Medici wurden wieder einmal aus der Stadt vertrieben. Die Stadt verkündete ihre Unabhängigkeit. Das war der letzte klägliche Versuch, eine Republik zu schaffen. Am 12. August 1530, nach einer elfmonatigen Belagerung, dringen die kaiserlichen Truppen zusammen mit den Papsttruppen nach Florenz ein und im darauf folgenden Jahr, mit kaiserlichem Zugeständnis, wird Alexander de' Medici zum Oberhaupt der Regierung und des Staates erklärt. Der neue Herrscher, den man nach einer späteren Entscheidung "Herzog der Republik von Florenz" nennen sollte, schaffte eine Tyrannei, mit neuen Institutionen, die alle unter seiner Kontrolle standen. Zudem begann er außenpolitisch sich mit allen wichtigen europäischen Regierungshäusern zu verbünden. So heiratete er die leibliche Tochter von Kaiser Karl V und vermählte seine Stiefschwester Katharina mit dem zweiten Sohn von Franz I.
+                    </p>
+                    <p class="geschichteP">
+                        Die Gegner der Medici, angeführt von Filippo Strozzi, versuchten vergeblich die Regierung des Herzog Alessandro zu stürzen. Sie waren sogar erfolglos, als Lorenzino de' Medici im Jahre 1537 Alessandro umgebracht hat. Der einzig mögliche Nachkomme war Cosimo der Jüngere, Sohn von Giovanni delle Bande Nere, ein jüngerer Zweig der Familie, da der Zweig von Cosimo dem Älteren schon erloschen war. Mit nur 17 Jahren schaffte es der Herzog mit Respekt zu regieren und baute allmählich eine absolutistische Alleinherrschaft auf. Zu seinen Lebzeiten schaffte er es, die ablehnenden Splittergruppen zu brechen und die Stadt wieder zu kräftigen. So brachte er auch Siena im Jahre 1555 unter die Herrschaft von Florenz. Er bekam einen Hoheitstitel durch den Papst verliehen und am 5. März 1570 wurde er von Pius V. zum Großherzog der Toskana gekrönt. Mit seinem Tod 1574 überließ er die Regierung an seinen Sohn Francesco, der bis 1587 regierte und dann von seinem Bruder Ferdinando (1587-1609) abgelöst wurde.
+                    </p>
+                </section>
+            </div>
+            <div class="contentWrapperLeft">
+                <section id="artikel12">
+                    <h2 class="geschichteH2">
+                        Die Grossen Namen Des 16. Jahrhunderts
+                    </h2>
+                    <p class="geschichteP">
+                        Obwohl sich Leonardo da Vinci einen Namen durch den Medici Hof schaffte, kam er nicht mit der Philosophie des Hofes zurecht und verließ daher 1482 Florenz, um nach Mailand zu gehen. Als er 1500 zurückkam, war die Stadt immer noch republikanisch, doch nicht mehr für allzu lange Zeit (1512). Die ungenaue neu-platonische und ausweichende Ideologie wurde von Machiavellis krasser empirischer Vorstellung eines modernen Staates ersetzt. Michelangelo und Raffaello hatten bereits eine neue künstlerische Atmosphäre in Florenz geschaffen, während Leonardo künstlerisch in Mailand verknüpft war. 1504 verließ auch Michelangelo die Stadt und ging in das damals künstlerische Zentrum, nach Rom.
+                    </p>
+                    <p class="geschichteP">
+                        Die großen neuen Schirmherren dieser Periode waren die Päpste Clement VII, Julius II und Leo X. Raffaello übersiedelte von Urbino nach Florenz im selben Jahr, als Michelangelo nach Rom ging. Er blieb dort vier Jahre, lang genug, um die Spuren einer neuen Kunstvorstellung zu hinterlassen und seine ideale Form und technische Perfektion zu schaffen. Das komplexe und dramatische Erbe, das Michelangelo zurückgelassen hatte und das raffinierte, rastlose Verständnis von Leonardo, schufen die Basis des Manierismus.
+                    </p>
+                    <p class="geschichteP">
+                        1516 kam Michelangelo aus Rom zurück, um die Fassade von der Kirche San Lorenzo im Auftrag von Papst Leo X - auch ein Medici - zu entwerfen. Dieser Auftrag wurde später in ein anderes Projekt umgewandelt, und zwar für den Bau einer neuen Sakristei für die Gräber von Lorenzo und Giuliano dei Medici. Im Hauptraum und der Halle der Bücherei Laurenziana, mit ihrer dominierenden Zentraltreppe, welche ausschaut wie die fallende Welle eines Wasserfalls, an der Seite unterstützt durch eine Balustrade und einer dicken Reihe hoher Stufen, verfrüht Michelangelo die charakteristischen Eigenschaften des Barocks.
+                    </p>
+                    <p class="geschichteP">
+                        Nach der Belagerung von Florenz durch die Spanier 1529 und nach dem Fall der Republik, welche in der Zwischenzeit von Herzog Alessandro die Medici wieder errichtet wurde, war Michelangelo dazu gezwungen Florenz wieder zu verlassen. 1534 wurde er zurück nach Rom beordert, um die Fresken in der Sixtinischen Kapelle zu malen. Zur selben Zeit begann sich der Aspekt der Stadt Florenz zu verändern. Bis dahin bestand sie hauptsächlich aus schmalen Gassen und Gebäuden aus dem 15. und 16. Jahrhundert. So wurden neue Innenhöfe und Gärten geschaffen und die Tendenz zu weiten Plätzen, auf denen Versammlungen und Theateraufführungen stattfinden konnten, machte sich breiter. Giorgio Vasari, Maler, Architekt und Kunsthistoriker, baute den Palazzo degli Uffizi in eine große Stadthalle um. Bartolomeo Ammannati, Bildhauer und Architekt, verwandelte den Palazzo Pitti in ein langes, giebelartiges Gebäude. Bernardo Buontalenti welcher erfolgreich Ammannati als Architekt der Medici ablöste, brachte die lebendigsten Beispiele der Variationen der damaligen Kultur hervor. Dieser außergewöhnliche und vielseitige Charakter war fähig, sowohl die Stadtplanung von Livorno durchzuführen, als auch die Kronjuwelen des Großherzogtums zu entwerfen, als auch die Pläne für die Fortezza di Belvedere vorzubereiten.
+                    </p>
+                </section>
+            </div>
+            <div class="contentWrapperLeft">
+                <section id="artikel13">
+                    <h2 class="geschichteH2">
+                        Der Rücktritt Der Medici
+                    </h2>
+                    <p class="geschichteP">
+                        Ferdinand I (1587-1609) führte die angefangene Politik seines Vaters fort und war sehr erfolgreich, das Großherzogtum zu kräftigen. Er schaffte es auch, das schwierige Gleichgewicht zwischen Frankreich und Spanien beizubehalten. Zeichen der Dekadenz wurden unter der Herrschaft seiner beiden Söhne immer deutlicher und stiegen während des 17. Jahrhunderts immer schneller an. Florenz war immer noch eine große Stadt, aber ihr Territorium war klein und konnte somit nicht mit den großen und mächtigen zentralisierten Staaten konkurrieren. Auch die wirtschaftliche Situation hatte sich gedreht. Handel und Handwerk waren am abfallen und zumindest bis zum Ende des 16. Jahrhunderts war nur noch das Bankwesen auf europäischem Niveau. Aber auch dies ließ immer mehr nach.
+                    </p>
+                    <p class="geschichteP">
+                        Ferdinand I wurde vom Kränklichen II (1609-1621) abgelöst, der durch seinen Tod die Herrschaft an seine Frau Maria Magdalena von Österreich und seine Mutter Christine von Lothringen abgab. 1628, als die Herrschaftsperiode dem Ende zuging, bestieg Ferdinand II den Thron und regierte bis 1670. Obwohl angenommen wird, dass er einer der besten der Medici Herrschaft war, konnte er nichts gegen den unaufhaltsamen Verfall von Florenz und der Toskana unternehmen. Genauso wenig konnten es seine Nachfolger Ferdinand III (1670-1723), noch Gian Gastone, welcher 1737 ohne Thronfolge verstarb. Die Stadt, kulturell in eine provinzielle Rolle verurteilt, spiegelt immer noch eine gewisse Vitalität wider, welche sich vor allem im Bereich der Musik und den vielen Akademien ausdrückt. Ab dem späten 16. Jahrhundert und durch das ganze 17. Jahrhundert entstanden zahlreiche Literatur-Akademien. Die Accademia della Crusca, deren Hauptaufgabe ein Wörterbuch zu schaffen war, welches zum ersten Mal 1612 erschien, wurde 1582 gegründet. Für die Wissenschaft von großer Bedeutung war das Schaffen der Accademia del Cimento, 1657 gegründet von Leopoldo de' Medici und von seinem Bruder, dem regierenden Ferdinand II., finanziell unterstützt. Beide waren Schüler von Galileo, dem einzigen Genie, das im 17. Jahrhundert aus diesem Großherzogtum hervorgegangen ist.
+                    </p>
+                </section>
+            </div>
+            <div class="contentWrapperLeft">
+                <section id="artikel14">
+                    <h2 class="geschichteH2">
+                        Das Zeitalter Der Lothringer
+                    </h2>
+                    <p class="geschichteP">
+                        Nach dem Tod des Großherzog Gian Gastone, dem letzten Medici, entschieden in Wien die wichtigsten europäischen Länder, dass die Toskana an Franz I. Herzog von Lothringen - der französisch-österreichischen Dynastie gegeben wird. Die Herrschaft wurde später von seinen Nachfolgern Peter Leopold I, Ferdinand II, Ferdinand III und schließlich von Leopold II übernommen.
+                    </p>
+                    <p class="geschichteP">
+                        Während die Ankunft der Lothringischen Familie in Florenz, deren Wirtschaft wieder ankurbelte, betonte es aber leider auch zugleich, die provinzielle Mentalität, welche es Florenz untersagte am internationalen Kulturwachstum teilzunehmen. Die Konsequenzen daraus musste die Stadt noch lange tragen. Die Techniken von Ammannati und Buontalenti sehr die Architektur beeinflusst, wie man in den Arbeiten von Pierfrancesco Silvani, Foggini, und Ruggieri gut sehen kann. In der Mitte des 18. Jahrhunderts, als die internationale Kultur wieder einmal im Umbruch war, baten die Lothringer den Franzosen Jadot nach Florenz zu kommen, um der Stadt einen Neo-Klassizistischen Hauch zu geben. Der Neo-Klassizismus in Florenz hat eine stark historische Note bewiesen, guten Geschmack und Eleganz, wie man unter anderem in dem kleinen Meridiana Palast in den Boboli Gärten und im Weißen Raum des Palazzo Pitti sehen kann.
+                    </p>
+                    <p class="geschichteP">
+                        Zur selben Zeit, wurde der Wirtschaftsaufschwung immer besser sichtbar: die Verlängerung der via Larga, zwei neuen Brücken und die Straßen entlang des Arno-Flusses wurden auch außerhalb den Stadtmauern. Sowie die ärmsten Viertel immer mehr ausgebaut wurden. Als Leopold II von Lothringen wieder die Kontrolle der Stadt, unterstützt von den österreichischen Truppen, gewonnen hat, wurden die Ideale der Schönheit und Eleganz des Neo-klassizistischen Stils durch die aufschlussreiche Theorie zur Natur zurückzukehren und die Freiheit der Menschheit, ersetzt. Die wachsende Ausdehnung der Wohnviertel in der Nähe der Stadtmauer und der beunruhigende Wachstum der Bevölkerung, die in den Armenvierteln lebten, war der Hauptgrund für den sozialen Krieg und Revolutionen, während die Geburt der Industrialisierung das Problem der Arbeitsbedingungen der Arbeiterklassen noch mehr betonte.
+                    </p>
+                </section>
+            </div>
+            <div class="contentWrapperLeft">
+                <section id="artikel15">
+                    <h2 class="geschichteH2">
+                        Florenz Als Hauptstadt
+                    </h2>
+                    <p class="geschichteP">
+                        1859 verlassen die Lothringer die Stadt Florenz freiwillig. Danach und nach dem zweiten Unabhängigkeitskrieg, wird Florenz an das vereinigte Königreich angegliedert und wird für fünf Jahre von 1865 - 1870 zur Hauptstadt von Italien ernannt. Das historische Stadtzentrum wurde einer intensiven Rundumerneuerung unterzogen, welcher das jüdische Viertel und der Alte Markt, in der Nähe der heutigen Piazza della Repubblica zum Opfer fielen. Dieser Platz repräsentiert die Zerstörung von tausend Jahren Stadtbildung, ersetzt durch eine anonyme und geometrische Anordnung der Gebäude. Manche Gebäude wurden intakt gelassen, die heute noch ohne Verbindung zwischen den anderen Häusern herausragen.
+                    </p>
+                </section>
+            </div>
+            <div class="contentWrapperLeft">
+                <section id="artikel16">
+                    <h2 class="geschichteH2">
+                        Florenz Im 19. Jahrhundert
+                    </h2>
+                    <p class="geschichteP">
+                        Durch das ganze Jahrhundert hindurch leidet Florenz an einem Verschlechterungsprozess. Die alte Stadtstruktur kann nicht länger mit dem modernen Stadtleben mithalten und wird zu dem Problem der komplexen Realität.
+                    </p>
+                    <p class="geschichteP">
+                        Nachdem Giuseppe Poggis Plan für "Florenz - Hauptstadt von Italien (1864 - 1870) genehmigt und umgesetzt wurde, dehnte sich Florenz bis zu den nahe gelegenen Hügeln aus. Es wurden die alten Stadtmauern zerstört, damit man einen Auto-Ring um die Stadt bauen konnte und es wurde die Viale dei Colli sowie der Piazzale Michelangelo konstruiert. Zudem wurden neue Wohnviertel innerhalb des Straßenringes geschaffen (das Mattonaia-Viertel rund um der Piazza dell'Indipendenza und das Maglio-Viertel rund um die Piazza d'Azeglio). Dann wurde noch das Stadtzentrum rund um die Piazza Vittorio Emanuele II (die heutige Piazza Repubblica) abgerissen um dort neue Häuser zu bauen, die hauptsächlich als Bürobauten dienten. In der ersten Hälfte des 20. Jahrhunderts, dehnte sich die Stadt, immer noch nach den Plänen von G.Poggi, immer weiter aus, bis zu der via Vittorio Emanuele II im Westen, der Viale Volta im Osten und auf der anderen Seite des Arno bis zur via Pisano hinter dem Pignone.
+                    </p>
+                    <p class="geschichteP">
+                        Bis zum ersten Weltkrieg sammelten sich die Probleme der Stadt immer weiter an, ohne spürbare Eingriffe der öffentlichen Autoritäten. Auf einem sozialen Level wuchs immer mehr eine Bewegung, um die Arbeiterklasse aus dem Elend zu retten.
+                    </p>
+                    <p class="geschichteP">
+                        Between 1890 and 1915, the population grew by fifty thousand. Between 1905 and 1913, 36,652 rooms were constructed and about 2,000 low-rent dwellings were built. The terraces of middle class two-storey houses known as "trenini" ("toy trains") from Ricorboli to San Gervasio and from the Mugnone valley to San Jacopino and Rifredi are a somewhat provincial version of a modern European form which, however, now appears as not devoid of quality in its neatness and dignity with respect to the constructional anarchy of today.
+                    </p>
+                    <p class="geschichteP">
+                        Zwischen 1890 und 1915 wuchs die Bevölkerung um 50.000 an. Zwischen 1905 und1913 wurden 36.652 Zimmer gebaut und über 2.000 Billig-Miet-Wohnungen errichtet. Die Terrassen der zweistöckigen Mittelklassehäuser, bekannt als "trenini" ("Modeleisenbahn") zwischen Ricorboli und San Gervasio und zwischen dem Mugnone Tal bis San Jacopino und Rifredi, sind eine etwas ländliche Form der modernen europäischen Bauweise.
+                    </p>
+                </section>
+            </div>
+            <div class="contentWrapperLeft">
+                <section id="artikel17">
+                    <h2 class="geschichteH2">
+                        Florenz Heute
+                    </h2>
+                    <p class="geschichteP">
+                        In kaum einer anderen Region der Welt gibt es so viele kunsthistorisch bedeutende Städte wie in der Toskana. Eine Stadt sticht dabei jedoch wegen ihrer Größe und ihrer Vielfalt heraus: Florenz. Als Wiege einer ganzen Kunstepoche, der Renaissance, zieht sie jedes Jahr Millionen von Besuchern in ihren Bann. Ab dem späten Mittelalter erlangte Florenz durch skrupellose Machtpolitik die Vorrangstellung in der Toskana. Der unermessliche Reichtum, den die Stadtväter stets zur Schau stellten, ist heute noch überall in der Stadt zu bewundern.
+                    </p>
+                    <div>
+                        <table>
+                            <caption>Florenz Daten</caption>
+                            <tbody>
+                                <tr>
+                                    <th class="thLeft">Staat</th>
+                                    <td class="tdRight">Italien</td>
+                                </tr>
+                                <tr>
+                                    <th class="thLeft">Region</th>
+                                    <td class="tdRight">Toskana</td>
+                                </tr>
+                                <tr>
+                                    <th class="thLeft">Metropolitanstadt</th>
+                                    <td class="tdRight">43° 47′ N, 11° 15′ OKoordinaten: 43° 47′ 0″ N, 11° 15′ 0″ O | OSM</td>
+                                </tr>
+                                <tr>
+                                    <th class="thLeft">Höhe</th>
+                                    <td class="tdRight">380.948 (31. Dez. 2017)</td>
+                                </tr>
+                                <tr>
+                                    <th class="thLeft">Bevölkerungsdichte</th>
+                                    <td class="tdRight">3.735 Einw./km²</td>
+                                </tr>
+                                <tr>
+                                    <th class="thLeft">Postleitzahl</th>
+                                    <td class="tdRight">50100</td>
+                                </tr>
+                                <tr>
+                                    <th class="thLeft">Vorwahl</th>
+                                    <td class="tdRight">055</td>
+                                </tr>
+                                <tr>
+                                    <th class="thLeft">ISTAT-Nummer</th>
+                                    <td class="tdRight">048017</td>
+                                </tr>
+                                <tr>
+                                    <th class="thLeft">Volksbezeichnung</th>
+                                    <td class="tdRight">Florentiner (Fiorentini)</td>
+                                </tr>
+                                <tr>
+                                    <th class="thLeft">Schutzpatron</th>
+                                    <td class="tdRight">Johannes der Täufer</td>
+                                </tr>
+                                <tr>
+                                    <th class="thLeft">Website</th>
+                                    <td class="tdRight"><a href="https://www.comune.fi.it">comune.fi.it</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="tdColspan" colspan="2"><a href="https://de.wikipedia.org/wiki/Florenz">wikipedia.org/wiki/Florenz</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <iframe id="florenzMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92181.08820592653!2d11.170928076872391!3d43.77993676478598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a56a680d2d6ad%3A0x93d57917efc72a03!2sFlorenz%2C+Italien!5e0!3m2!1sde!2sde!4v1552911243243" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer id="footerID" class="positionAbsolut">
+            <div class="navWrapper">
+                <nav class="footerNav2">
+                    <ul>
+                        <li><a href="../index.html">Startseite</a></li>
+                        <li><a href="geschichte.html">Geschichte</a></li>
+                        <li><a href="attractions.html">Sehenswürdigkeiten</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+        <script>
+            setFooterPosition();
+        </script>
+    </body>
+</html>
